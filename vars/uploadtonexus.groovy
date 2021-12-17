@@ -1,4 +1,5 @@
-def call(reponame){
+def call(conf){
+ def reponame = conf{"reponame"}
  def groupId = pomfile.groupId
  def type = pomfile.packaging
  def artifactID = pomfile.artifactId
